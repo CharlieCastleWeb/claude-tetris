@@ -52,6 +52,7 @@ jobs:
                - Busca si ya existe uno: `gh api repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/comments` y filtra por el marcador.
                - Si existe, actualízalo con `gh api -X PATCH repos/${{ github.repository }}/issues/comments/<ID> -f body=...`.
                - Si no existe, créalo con `gh issue comment`.
+               - El comentario DEBE estar en markdown válido de GitHub (GFM): encabezados `##`, listas con `-`, código en `backticks` y bloques con ``` , sin HTML innecesario, para que GitHub lo renderice correctamente.
                - Formato (markdown, en español):
                  ## 🔍 Diagnóstico automático
                  - **Resumen**: qué se reporta/pide.
