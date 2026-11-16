@@ -37,6 +37,12 @@
   --shadow: rgba(0, 0, 0, 0.15);
 }
 
+/* ---- Skins (tras los temas: Neon fuerza fondo negro en ambos) ---- */
+[data-skin="neon"] {
+  --board-bg: #000000;
+  --grid: #1a1a33;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -225,6 +231,27 @@ kbd {
 }
 
 #theme-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* ---- Selector de skin ---- */
+#skin-select {
+  background: var(--kbd-bg);
+  color: var(--text);
+  border: 1px solid var(--kbd-border);
+  border-radius: 6px;
+  padding: 6px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#skin-select:hover {
+  border-color: var(--accent);
+}
+
+#skin-select:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
 }
