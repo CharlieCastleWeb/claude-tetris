@@ -19,7 +19,24 @@ body {
   position: relative;
 }
 
+.title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: 8px;
+  margin-bottom: 16px;
+  padding-left: 8px; /* compensa el letter-spacing final */
+}
+
+.title span:nth-child(1) { color: #e57373; }
+.title span:nth-child(2) { color: #f5a97f; }
+.title span:nth-child(3) { color: #e5c07b; }
+.title span:nth-child(4) { color: #98c379; }
+.title span:nth-child(5) { color: #7aa2f7; }
+.title span:nth-child(6) { color: #c678dd; }
+
 .game-container {
+  position: relative;
   display: flex;
   gap: 20px;
   align-items: flex-start;
